@@ -36,7 +36,7 @@ public class AddEnquiryMain extends base {
 
 		 Xls_Reader reader = new Xls_Reader(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\TestData.xlsx");
 			
-       	//int rowCount = reader.getRowCount("LoginCredentials");
+         //int rowCount = reader.getRowCount("LoginCredentials");
 		 String username = reader.getCellData("LoginCredentials","Username", 2);
          String password = reader.getCellData("LoginCredentials","Password", 2);
 
@@ -75,7 +75,7 @@ public class AddEnquiryMain extends base {
 	    System.out.println( En.successMessageMethod().getText());
 }
 	
-	  @DataProvider
+	/*  @DataProvider
 	    public Object[][] getData() {
 	    	//row stands for the how many different data type should run
 	    	//column stands for the how many values per each test
@@ -98,7 +98,9 @@ public class AddEnquiryMain extends base {
 	    	return data;
 	    }
 
-	  
+	  */
+	
+	
 	  @AfterTest
 	  public void after() {
 		  

@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Academy.E2EProject.LoginEnqOPD">
+      <class name="Academy.E2EProject.LoginPageMain">
         <methods>
+          <include name="loginMethod"/>
           <include name="before"/>
-          <include name="OPDRegMethod"/>
-          <include name="enquiryAdd"/>
+          <include name="IPDRegMain"/>
+          <include name="after"/>
         </methods>
-      </class> <!-- Academy.E2EProject.LoginEnqOPD -->
+      </class> <!-- Academy.E2EProject.LoginPageMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
