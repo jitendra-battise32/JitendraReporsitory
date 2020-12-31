@@ -51,6 +51,7 @@ if (browserName.equals("firefox"))
 {
 	System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\lib\\geckodriver.exe");
 	 driver = new FirefoxDriver();
+	 
 }
 
 if (browserName.equals("IE")) 

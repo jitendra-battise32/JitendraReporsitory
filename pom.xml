@@ -28,7 +28,7 @@
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                        <suiteXmlFile>testNGCucumber.xml</suiteXmlFile> -->
+                    <!--     <suiteXmlFile>testNGCucumber.xml</suiteXmlFile> --> 
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
