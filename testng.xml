@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HMS Rajbahadur">
+
+<listeners>
+   <listener class-name = "Academy.E2EProject.Listeners"/>
+</listeners>
+
+
+  <test name="Login Page Test Case">
+    <classes>
+      <class name="Academy.E2EProject.LoginPageMain"/> 
+    </classes>
+</test> 
+
+   <test name="Add Enquiry Test Case">
+    <classes>
+          <class name="Academy.E2EProject.AddEnquiryMain"/>
+    </classes>
+  </test> 
+  
+  <test name="OPD Registration Test Case">
+    <classes>
+          <class name="Academy.E2EProject.OPDRegistrationMain"/>
+      </classes>
+  </test> 
+  
+</suite> 

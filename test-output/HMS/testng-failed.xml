@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HMS]">
+  <listeners>
+    <listener class-name="Academy.E2EProject.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="OPD Registration Test Case(failed)">
+    <classes>
+      <class name="Academy.E2EProject.OPDRegistrationMain">
+        <methods>
+          <include name="after"/>
+          <include name="OPDRegMethod" invocation-numbers="0"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.OPDRegistrationMain -->
+    </classes>
+  </test> <!-- OPD Registration Test Case(failed) -->
+</suite> <!-- Failed suite [HMS] -->
