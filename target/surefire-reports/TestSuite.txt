@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 60.952 s <<< FAILURE! - in TestSuite
+OPDRegMethod(Academy.E2EProject.OPDRegistrationMain)  Time elapsed: 11.769 s  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+unexpected alert open: {Alert text : Please correct the following 3 errors.
+
+? The Patient Name field is required.
+? The Doctor field is required.
+? The Contact No 1 field is required.}
+  (Session info: chrome=87.0.4280.88): Please correct the following 3 errors.
+
+? The Patient Name field is required.
+? The Doctor field is required.
+? The Contact No 1 field is required.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-90MBKRF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\JITEND~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59060}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 11f064a3e73035f7a8c1faa36c459791
+*** Element info: {Using=xpath, value=//*[@class='success-icon']}
+	at Academy.E2EProject.OPDRegistrationMain.OPDRegMethod(OPDRegistrationMain.java:93)
+
+setUpClass(cucumberOptions.TestRunner)  Time elapsed: 12.437 s  <<< FAILURE!
+java.lang.IllegalArgumentException: path must exist: C:\Users\jitendra.battise\E2EProject\src\test\java\features
+
