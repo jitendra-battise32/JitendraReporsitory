@@ -5,9 +5,8 @@
     <classes>
       <class name="Academy.E2EProject.LoginPageMain">
         <methods>
-          <include name="loginMethod"/>
           <include name="before"/>
-          <include name="IPDRegMain"/>
+          <include name="ipdRegistration"/>
           <include name="after"/>
         </methods>
       </class> <!-- Academy.E2EProject.LoginPageMain -->

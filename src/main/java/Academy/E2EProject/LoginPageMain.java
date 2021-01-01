@@ -1,9 +1,12 @@
 package Academy.E2EProject;
 
+import java.awt.AWTException;
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -37,8 +40,9 @@ public class LoginPageMain extends base {
     }
 
 	
-	@Test
+	@Test(priority = 0)
         public void loginMethod() throws IOException, InterruptedException {
+		
 		    Xls_Reader reader = new Xls_Reader(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\TestData.xlsx");
 				
 			String username = reader.getCellData("LoginCredentials","Username", 2);
@@ -53,26 +57,46 @@ public class LoginPageMain extends base {
          	Assert.assertTrue(lp.getTitleMethod().isDisplayed());
          
 }
-	
-	
-	@Test
-	
-	 public void IPDRegMain() throws InterruptedException {
+
+
+	@Test(priority = 1)
+	 
+	public void ipdRegistration() throws InterruptedException, AWTException {
 		
-		  //System.out.println("Test");
-		
-		Thread.sleep(3000);
-		IPDReg ipd = new IPDReg(driver);
-        Thread.sleep(3000);
-		ipd.addIPDButtonMethod().click();
-		Thread.sleep(3000);
-		
-		
-		
-		
+	  driver.navigate().to("http://projects.teamgrowth.net/HMS-Rajebahadur/IPDs#NoBack");
+	  IPDReg ipd =new IPDReg(driver);
+	  ipd.addIPDButtonMethod().click();
+	  ipd.enquiryNoSearchMethod();
+	  Thread.sleep(3000);
+	  ipd.uploadMethod();
+      String uploaded = ipd.uploadedOrNotMethod().getText();
+      Assert.assertEquals(uploaded, "File uploaded successfully.");
+      ipd.parentConsSearchMethod("Dr Jaideep Rajebahadur");
+      ipd.wardSearchMethod("GENERAL WARD");
+      ipd.bedMethod();
+      ipd.admissionDateMethod();
+      ipd.scroll();
+      ipd.ageMethod().sendKeys("26");
+      //ipd.scroll();
+      Thread.sleep(3000);
+      
+      ipd.genderMethod();
+      ipd.patientAddMethod().click();
+      ipd.patientAddMethod().clear();
+      ipd.patientAddMethod().sendKeys("Row House No. 04, Anupam row house Nashik,422003");
+      ipd.scroll();
+      ipd.patientSameAddrMethod().click();
+      ipd.scroll();
+      ipd.scroll();
+      ipd.TPAMethod().click();
+      Thread.sleep(3000);
+      ipd.insuranceCompanyMethod("ADITYA BIRLA");
+      ipd.policynumberMethod().sendKeys("1234567910");
+      ipd.submitButtonMethod().click();
+      String msg =   ipd.successMessMethod().getText();
+      Assert.assertTrue(msg.contains("added successfully"));
+
 	}
-	
-	
 
     @AfterTest 
     public void after() {

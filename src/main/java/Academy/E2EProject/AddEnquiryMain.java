@@ -55,7 +55,7 @@ public class AddEnquiryMain extends base {
        	 String contactNo1 = reader.getCellData("AddEnquiries","ContactNoOne",2);
     	 String contactNo2 = reader.getCellData("AddEnquiries","ContactNoTwo",2);
     	
-    	 AddEnquiry En = new AddEnquiry(driver);
+        AddEnquiry En = new AddEnquiry(driver);
 	    
 	    En.drawerMenuMethod();
 	    Thread.sleep(3000);
