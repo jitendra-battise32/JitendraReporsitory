@@ -79,7 +79,7 @@ public class OPDRegistration {
 		
 		//return enquiryNo;
 		enquiryNo.click();
-	    enquiryNoSearch.sendKeys("72");
+	    enquiryNoSearch.sendKeys("80");
 		enquiryNoSearch.sendKeys(Keys.ENTER);
 	   // WebElement builder = driver.findElement(By.xpath("/html/body/div[1]/div[7]/div[2]/div[3]/form/table/tbody/tr[1]/td[2]/div/div/div/input"));
 	 //   builder.sendKeys("41");
