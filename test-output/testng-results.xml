@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50851" started-at="2021-01-01T13:29:17Z" finished-at="2021-01-01T13:30:08Z">
+  <suite name="Default suite" duration-ms="53475" started-at="2021-01-04T04:59:24Z" finished-at="2021-01-04T05:00:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50851" started-at="2021-01-01T13:29:17Z" finished-at="2021-01-01T13:30:08Z">
+    <test name="Default test" duration-ms="53475" started-at="2021-01-04T04:59:24Z" finished-at="2021-01-04T05:00:17Z">
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="12735" started-at="2021-01-01T13:29:17Z" finished-at="2021-01-01T13:29:30Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="23142" started-at="2021-01-04T04:59:24Z" finished-at="2021-01-04T04:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="4041" started-at="2021-01-01T13:29:30Z" finished-at="2021-01-01T13:29:34Z">
+        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="5602" started-at="2021-01-04T04:59:47Z" finished-at="2021-01-04T04:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="ipdRegistration()[pri:1, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="ipdRegistration" duration-ms="34052" started-at="2021-01-01T13:29:34Z" finished-at="2021-01-01T13:30:08Z">
+        <test-method status="PASS" signature="ipdRegistration()[pri:1, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="ipdRegistration" duration-ms="24642" started-at="2021-01-04T04:59:53Z" finished-at="2021-01-04T05:00:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ipdRegistration -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-01T13:30:08Z" finished-at="2021-01-01T13:30:08Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-04T05:00:17Z" finished-at="2021-01-04T05:00:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

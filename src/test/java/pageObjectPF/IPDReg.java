@@ -193,19 +193,26 @@ public void wardSearchMethod(String wardSelect) throws InterruptedException {
 
 public void bedMethod() {
 	
-	  driver.findElement(By.xpath("//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[2]/input")).click();
-	 /*  List<WebElement> bakeries = bed;
+	  //driver.findElement(By.xpath("//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[2]/input")).click();
+	   List<WebElement> bakeries = bed;
        for (WebElement webElement : bakeries) {
         String name = webElement.getText();
-        System.out.println(name);
+    //    System.out.println(name);
+        
+       System.out.println(webElement.getAttribute(name));
+       webElement.click();
+       System.out.println("Test");
+        
+        
+     
       
-        if ("GENERAL WARD".equals(webElement.getText())) 
+      /*  if ("15".equals(webElement.getText())) 
         {
         	webElement.click();
             
-       }       
+       }       */
       
-       } */
+       } 
   } 
 
 public void admissionDateMethod() {
