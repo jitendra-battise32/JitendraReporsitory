@@ -71,6 +71,7 @@ public class LoginPageMain extends base {
 	  ipd.uploadMethod();
       String uploaded = ipd.uploadedOrNotMethod().getText();
       Assert.assertEquals(uploaded, "File uploaded successfully.");
+      Thread.sleep(3000);
       ipd.parentConsSearchMethod("Dr Jaideep Rajebahadur");
       ipd.wardSearchMethod("GENERAL WARD");
       ipd.bedMethod();

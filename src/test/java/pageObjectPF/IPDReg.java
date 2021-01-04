@@ -18,8 +18,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class IPDReg {
-	
-	
 	public WebDriver driver;
     
 	public IPDReg(WebDriver driver) {
@@ -193,15 +191,17 @@ public void wardSearchMethod(String wardSelect) throws InterruptedException {
 
 public void bedMethod() {
 	
-	  //driver.findElement(By.xpath("//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[2]/input")).click();
-	   List<WebElement> bakeries = bed;
+	  driver.findElement(By.xpath("//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[4]/input")).click();
+	
+	  
+	  /*  List<WebElement> bakeries = bed;
        for (WebElement webElement : bakeries) {
         String name = webElement.getText();
     //    System.out.println(name);
         
-       System.out.println(webElement.getAttribute(name));
-       webElement.click();
-       System.out.println("Test");
+      // System.out.println(webElement.getAttribute(name));
+       webElement.click(); */
+     //  System.out.println("Test");
         
         
      
@@ -211,9 +211,9 @@ public void bedMethod() {
         	webElement.click();
             
        }       */
-      
-       } 
-  } 
+
+} 
+  
 
 public void admissionDateMethod() {
 	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -249,6 +249,7 @@ jsExecutor.executeScript("document.getElementById('Patients_gender').value='Male
 //gender.selectByIndex(1); 
 
 }
+
 
 public WebElement patientAddMethod() {
 	

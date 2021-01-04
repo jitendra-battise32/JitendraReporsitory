@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [HMS Rajbahadur]">
+  <listeners>
+    <listener class-name="Academy.E2EProject.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Login Page Test Case(failed)">
     <classes>
       <class name="Academy.E2EProject.LoginPageMain">
         <methods>
@@ -11,5 +14,16 @@
         </methods>
       </class> <!-- Academy.E2EProject.LoginPageMain -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Login Page Test Case(failed) -->
+  <test thread-count="5" name="OPD Registration Test Case(failed)">
+    <classes>
+      <class name="Academy.E2EProject.OPDRegistrationMain">
+        <methods>
+          <include name="after"/>
+          <include name="OPDRegMethod"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.OPDRegistrationMain -->
+    </classes>
+  </test> <!-- OPD Registration Test Case(failed) -->
+</suite> <!-- Failed suite [HMS Rajbahadur] -->

@@ -4,17 +4,17 @@
   <listeners>
     <listener class-name="Academy.E2EProject.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Add Enquiry Test Case(failed)">
+  <test thread-count="5" name="Login Page Test Case(failed)">
     <classes>
-      <class name="Academy.E2EProject.AddEnquiryMain">
+      <class name="Academy.E2EProject.LoginPageMain">
         <methods>
-          <include name="after"/>
           <include name="before"/>
-          <include name="enquiryAdd"/>
+          <include name="ipdRegistration"/>
+          <include name="after"/>
         </methods>
-      </class> <!-- Academy.E2EProject.AddEnquiryMain -->
+      </class> <!-- Academy.E2EProject.LoginPageMain -->
     </classes>
-  </test> <!-- Add Enquiry Test Case(failed) -->
+  </test> <!-- Login Page Test Case(failed) -->
   <test thread-count="5" name="OPD Registration Test Case(failed)">
     <classes>
       <class name="Academy.E2EProject.OPDRegistrationMain">

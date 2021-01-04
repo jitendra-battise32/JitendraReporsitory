@@ -15,6 +15,7 @@ public class AddEnquiry {
 	
 	public WebDriver driver;
 
+	
 	public AddEnquiry(WebDriver driver) {
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);

@@ -1,29 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53475" started-at="2021-01-04T04:59:24Z" finished-at="2021-01-04T05:00:17Z">
+  <suite name="HMS Rajbahadur" duration-ms="184406" started-at="2021-01-04T06:20:25Z" finished-at="2021-01-04T06:23:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53475" started-at="2021-01-04T04:59:24Z" finished-at="2021-01-04T05:00:17Z">
+    <test name="Login Page Test Case" duration-ms="70780" started-at="2021-01-04T06:20:25Z" finished-at="2021-01-04T06:21:36Z">
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="23142" started-at="2021-01-04T04:59:24Z" finished-at="2021-01-04T04:59:47Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@3d121db3]" name="before" is-config="true" duration-ms="24785" started-at="2021-01-04T06:20:25Z" finished-at="2021-01-04T06:20:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="5602" started-at="2021-01-04T04:59:47Z" finished-at="2021-01-04T04:59:53Z">
+        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@3d121db3]" name="loginMethod" duration-ms="8474" started-at="2021-01-04T06:20:51Z" finished-at="2021-01-04T06:20:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="ipdRegistration()[pri:1, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="ipdRegistration" duration-ms="24642" started-at="2021-01-04T04:59:53Z" finished-at="2021-01-04T05:00:17Z">
+        <test-method status="FAIL" signature="ipdRegistration()[pri:1, instance:Academy.E2EProject.LoginPageMain@3d121db3]" name="ipdRegistration" duration-ms="36304" started-at="2021-01-04T06:20:59Z" finished-at="2021-01-04T06:21:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[4]/input"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-90MBKRF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\JITEND~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dab75599c8d258434d43eb70b88b00e2
+*** Element info: {Using=xpath, value=//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[4]/input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[4]/input"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-90MBKRF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\JITEND~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dab75599c8d258434d43eb70b88b00e2
+*** Element info: {Using=xpath, value=//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[4]/input}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageObjectPF.IPDReg.bedMethod(IPDReg.java:194)
+at Academy.E2EProject.LoginPageMain.ipdRegistration(LoginPageMain.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ipdRegistration -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-04T05:00:17Z" finished-at="2021-01-04T05:00:17Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@3d121db3]" name="after" is-config="true" duration-ms="0" started-at="2021-01-04T06:21:36Z" finished-at="2021-01-04T06:21:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- Academy.E2EProject.LoginPageMain -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login Page Test Case -->
+    <test name="Add Enquiry Test Case" duration-ms="36619" started-at="2021-01-04T06:21:39Z" finished-at="2021-01-04T06:22:16Z">
+      <class name="Academy.E2EProject.AddEnquiryMain">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@6dbb137d]" name="before" is-config="true" duration-ms="18959" started-at="2021-01-04T06:21:39Z" finished-at="2021-01-04T06:21:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="enquiryAdd()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@6dbb137d]" name="enquiryAdd" duration-ms="17659" started-at="2021-01-04T06:21:58Z" finished-at="2021-01-04T06:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enquiryAdd -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@6dbb137d]" name="after" is-config="true" duration-ms="0" started-at="2021-01-04T06:22:16Z" finished-at="2021-01-04T06:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- Academy.E2EProject.AddEnquiryMain -->
+    </test> <!-- Add Enquiry Test Case -->
+    <test name="OPD Registration Test Case" duration-ms="73679" started-at="2021-01-04T06:22:16Z" finished-at="2021-01-04T06:23:30Z">
+      <class name="Academy.E2EProject.OPDRegistrationMain">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@163e4e87]" name="before" is-config="true" duration-ms="53180" started-at="2021-01-04T06:22:16Z" finished-at="2021-01-04T06:23:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="OPDRegMethod()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@163e4e87]" name="OPDRegMethod" duration-ms="19678" started-at="2021-01-04T06:23:09Z" finished-at="2021-01-04T06:23:29Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Please correct the following 3 errors.
+
+● The Patient Name field is required.
+● The Doctor field is required.
+● The Contact No 1 field is required.}
+  (Session info: chrome=87.0.4280.88): Please correct the following 3 errors.
+
+● The Patient Name field is required.
+● The Doctor field is required.
+● The Contact No 1 field is required.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-90MBKRF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\JITEND~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2335db430b784e245a640f4d2f5e0a50
+*** Element info: {Using=xpath, value=//*[@class='success-icon']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please correct the following 3 errors.
+
+● The Patient Name field is required.
+● The Doctor field is required.
+● The Contact No 1 field is required.}
+  (Session info: chrome=87.0.4280.88): Please correct the following 3 errors.
+
+● The Patient Name field is required.
+● The Doctor field is required.
+● The Contact No 1 field is required.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-90MBKRF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\JITEND~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64181}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2335db430b784e245a640f4d2f5e0a50
+*** Element info: {Using=xpath, value=//*[@class='success-icon']}
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.getText(Unknown Source)
+at Academy.E2EProject.OPDRegistrationMain.OPDRegMethod(OPDRegistrationMain.java:93)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OPDRegMethod -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@163e4e87]" name="after" is-config="true" duration-ms="0" started-at="2021-01-04T06:23:30Z" finished-at="2021-01-04T06:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- Academy.E2EProject.OPDRegistrationMain -->
+    </test> <!-- OPD Registration Test Case -->
+  </suite> <!-- HMS Rajbahadur -->
 </testng-results>
