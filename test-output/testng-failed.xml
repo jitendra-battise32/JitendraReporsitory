@@ -15,6 +15,17 @@
       </class> <!-- Academy.E2EProject.LoginPageMain -->
     </classes>
   </test> <!-- Login Page Test Case(failed) -->
+  <test thread-count="5" name="Add Enquiry Test Case(failed)">
+    <classes>
+      <class name="Academy.E2EProject.AddEnquiryMain">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="enquiryAdd"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.AddEnquiryMain -->
+    </classes>
+  </test> <!-- Add Enquiry Test Case(failed) -->
   <test thread-count="5" name="OPD Registration Test Case(failed)">
     <classes>
       <class name="Academy.E2EProject.OPDRegistrationMain">

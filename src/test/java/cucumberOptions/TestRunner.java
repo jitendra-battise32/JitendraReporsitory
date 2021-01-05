@@ -17,7 +17,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = "C:\\Users\\jitendra.battise\\Jitu\\E2EProject\\src\\test\\java\\features",
+		features = "C:\\Users\\User\\JITU\\JitendraReporsitory\\src\\test\\java\\features",
 		glue="stepDefinations", tags = "@SmokeTest",monochrome=true,
 		plugin = {"pretty", "html:HMS1"}
 		)

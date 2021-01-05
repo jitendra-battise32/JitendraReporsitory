@@ -5,6 +5,7 @@
     <classes>
       <class name="Academy.E2EProject.LoginPageMain">
         <methods>
+          <include name="loginMethod"/>
           <include name="before"/>
           <include name="ipdRegistration"/>
           <include name="after"/>
