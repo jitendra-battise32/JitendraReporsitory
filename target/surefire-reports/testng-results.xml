@@ -1,65 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="HMS Rajbahadur" duration-ms="54271" started-at="2020-12-31T07:23:02Z" finished-at="2020-12-31T07:23:57Z">
+  <suite name="HMS Rajbahadur" duration-ms="83715" started-at="2021-01-14T05:33:35Z" finished-at="2021-01-14T05:34:58Z">
     <groups>
     </groups>
-    <test name="Login Page Test Case" duration-ms="13737" started-at="2020-12-31T07:23:02Z" finished-at="2020-12-31T07:23:16Z">
+    <test name="Login Page Test Case" duration-ms="44591" started-at="2021-01-14T05:33:35Z" finished-at="2021-01-14T05:34:19Z">
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@6b0c2d26]" name="before" is-config="true" duration-ms="10256" started-at="2020-12-31T02:23:02Z" finished-at="2020-12-31T02:23:13Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@4206a205]" name="before" is-config="true" duration-ms="12720" started-at="2021-01-14T11:03:35Z" finished-at="2021-01-14T11:03:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@6b0c2d26]" name="loginMethod" duration-ms="3259" started-at="2020-12-31T02:23:13Z" finished-at="2020-12-31T02:23:16Z">
+        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@4206a205]" name="loginMethod" duration-ms="5158" started-at="2021-01-14T11:03:47Z" finished-at="2021-01-14T11:03:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@6b0c2d26]" name="after" is-config="true" duration-ms="196" started-at="2020-12-31T02:23:16Z" finished-at="2020-12-31T02:23:16Z">
+        <test-method status="PASS" signature="ipdRegistration()[pri:1, instance:Academy.E2EProject.LoginPageMain@4206a205]" name="ipdRegistration" duration-ms="26668" started-at="2021-01-14T11:03:53Z" finished-at="2021-01-14T11:04:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ipdRegistration -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@4206a205]" name="after" is-config="true" duration-ms="0" started-at="2021-01-14T11:04:19Z" finished-at="2021-01-14T11:04:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- Academy.E2EProject.LoginPageMain -->
     </test> <!-- Login Page Test Case -->
-    <test name="Add Enquiry Test Case" duration-ms="20838" started-at="2020-12-31T07:23:17Z" finished-at="2020-12-31T07:23:38Z">
+    <test name="Add Enquiry Test Case" duration-ms="20033" started-at="2021-01-14T05:34:20Z" finished-at="2021-01-14T05:34:40Z">
       <class name="Academy.E2EProject.AddEnquiryMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@b7f23d9]" name="before" is-config="true" duration-ms="7698" started-at="2020-12-31T02:23:17Z" finished-at="2020-12-31T02:23:25Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@67e2d983]" name="before" is-config="true" duration-ms="6965" started-at="2021-01-14T11:04:20Z" finished-at="2021-01-14T11:04:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="enquiryAdd(java.lang.String, java.lang.String)[pri:0, instance:Academy.E2EProject.AddEnquiryMain@b7f23d9]" name="enquiryAdd" duration-ms="12928" started-at="2020-12-31T02:23:25Z" data-provider="getData" finished-at="2020-12-31T02:23:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Administrator]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Supp0rt#123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="enquiryAdd()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@67e2d983]" name="enquiryAdd" duration-ms="13066" started-at="2021-01-14T11:04:27Z" finished-at="2021-01-14T11:04:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enquiryAdd -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@b7f23d9]" name="after" is-config="true" duration-ms="207" started-at="2020-12-31T02:23:38Z" finished-at="2020-12-31T02:23:38Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@67e2d983]" name="after" is-config="true" duration-ms="0" started-at="2021-01-14T11:04:40Z" finished-at="2021-01-14T11:04:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- Academy.E2EProject.AddEnquiryMain -->
     </test> <!-- Add Enquiry Test Case -->
-    <test name="OPD Registration Test Case" duration-ms="18753" started-at="2020-12-31T07:23:38Z" finished-at="2020-12-31T07:23:57Z">
+    <test name="OPD Registration Test Case" duration-ms="18319" started-at="2021-01-14T05:34:40Z" finished-at="2021-01-14T05:34:58Z">
       <class name="Academy.E2EProject.OPDRegistrationMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@6591f517]" name="before" is-config="true" duration-ms="7247" started-at="2020-12-31T02:23:38Z" finished-at="2020-12-31T02:23:45Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@ca263c2]" name="before" is-config="true" duration-ms="6445" started-at="2021-01-14T11:04:40Z" finished-at="2021-01-14T11:04:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="OPDRegMethod()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@6591f517]" name="OPDRegMethod" duration-ms="11504" started-at="2020-12-31T02:23:45Z" finished-at="2020-12-31T02:23:57Z">
+        <test-method status="PASS" signature="OPDRegMethod()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@ca263c2]" name="OPDRegMethod" duration-ms="11872" started-at="2021-01-14T11:04:46Z" finished-at="2021-01-14T11:04:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPDRegMethod -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@6591f517]" name="after" is-config="true" duration-ms="0" started-at="2020-12-31T02:23:57Z" finished-at="2020-12-31T02:23:57Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@ca263c2]" name="after" is-config="true" duration-ms="0" started-at="2021-01-14T11:04:58Z" finished-at="2021-01-14T11:04:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

@@ -18,6 +18,8 @@ import pageObjectPF.AddEnquiry;
 import pageObjectPF.IPDReg;
 import pageObjectPF.LoginPage;
 import pageObjectPF.OPDRegistration;
+
+import pageObjectPF.ipdDetails;
 import resources.Xls_Reader;
 import resources.base;
 
@@ -59,7 +61,7 @@ public class LoginPageMain extends base {
 }
 
 
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	 
 	public void ipdRegistration() throws InterruptedException, AWTException {
 		
@@ -73,7 +75,8 @@ public class LoginPageMain extends base {
       Assert.assertEquals(uploaded, "File uploaded successfully.");
       Thread.sleep(3000);
       ipd.parentConsSearchMethod("Dr Jaideep Rajebahadur");
-      ipd.wardSearchMethod("GENERAL WARD");
+      ipd.wardSearchMethod("COMMON WARD");
+      //Thread.sleep(3000);
       ipd.bedMethod();
       ipd.admissionDateMethod();
       ipd.scroll();
@@ -97,6 +100,42 @@ public class LoginPageMain extends base {
       String msg =   ipd.successMessMethod().getText();
       Assert.assertTrue(msg.contains("added successfully"));
 
+	}
+	
+	@Test(priority = 1)
+	public void ipdDetailsMethods() throws InterruptedException {
+		
+		driver.navigate().to("http://projects.teamgrowth.net/HMS-Rajebahadur/IPDs#NoBack");
+		
+		ipdDetails ipdDet = new ipdDetails(driver);
+		ipdDet.ipdNoSearchMethod("IPD/2021/Jan/00022");
+		Thread.sleep(3000);
+		ipdDet.detailsButtonMethod().click();
+		ipdDet.clickDetailsMethod().click();
+	    String ipd = ipdDet.ipdDetailsPageVerifyMethod().getText();
+		Assert.assertTrue(ipd.contains("IPD Details"));
+		ipdDet.historyOptionMethod();
+	  //  String ipd = ipdDet.ipdDetailsPageVerifyMethod().getText();
+	    Assert.assertTrue(ipd.contains("IPD Details"));
+	    ipdDet.editIPDMethod().click();
+	 
+	    IPDReg ipd1 =new IPDReg(driver);
+	    ipd1.scroll();
+	    
+	    ipdDet.weightMethod().sendKeys("25");
+	    ipd1.scroll();
+	    ipdDet.saveButtonMethod().click();
+	    Thread.sleep(2000);
+	    String succ = ipdDet.updateSuccessMessageMethod().getText();
+	    Assert.assertTrue(succ.contains("IPD details updated successfully"));
+	    
+	   // Assert.assertTrue(edit.contains("Edit IPD"));
+		
+	//	String popup = ipdDet.windowPopupMethod().getText();
+	//	System.out.println(popup);
+	//	ipdDet.windowPopupMethod();
+		//Assert.assertTrue(popup.contains("Patient's History"));
+		
 	}
 
     @AfterTest 

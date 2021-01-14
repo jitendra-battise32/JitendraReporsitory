@@ -74,6 +74,7 @@ public class OPDRegistrationMain extends base{
 	    // 	opd.enquiryNoSearchMethod().sendKeys("41");
 	     //	opd.enquiryNoSearchMethod().sendKeys(Keys.ENTER);
 	     	opd.enquiryNoMethod();
+	   //  	opd.enquiryNoMethod();
 	     	opd.patientDOBMethod();
 	     	opd.opdDateMethod();
 	     	opd.ageMethod().sendKeys("20");

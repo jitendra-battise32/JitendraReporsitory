@@ -28,9 +28,9 @@ public WebDriver initialisationBrowser() throws IOException {
 	FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\data.properties");
 	prop.load(fis);
 	
-    String browserName = System.getProperty("browser");
+    //String browserName = System.getProperty("browser");
 
-	//String browserName = prop.getProperty("browser");
+	String browserName = prop.getProperty("browser");
 	
 	
 if (browserName.contains("chrome"))
@@ -43,9 +43,6 @@ if (browserName.contains("chrome"))
 	 }
      driver = new ChromeDriver(options);
 }
-
-
-
 
 
 if (browserName.equals("firefox")) 
@@ -77,7 +74,5 @@ public String getScreenShotPath(String testCaseName, WebDriver driver) throws IO
 	return destinationFile;
 	
 }
-
-
-		
+	
 }

@@ -3,6 +3,7 @@ resources\Xls_Reader.class
 stepDefinations\stepDefination.class
 pageObjectPF\AddEnquiry.class
 resources\base.class
+pageObjectPF\IPDReg.class
 cucumberOptions\TestRunner.class
 pageObjectPF\LoginPage.class
 resources\ExtentReporterNG.class

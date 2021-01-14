@@ -95,7 +95,8 @@ public class IPDReg {
 	@FindBy (xpath="//*[@id='grid']/div")
 	WebElement successMess;
 	
-
+	
+	
 public WebElement drawerMenuMethod() {
 	
     Actions actions = new Actions(driver);
@@ -114,7 +115,6 @@ public WebElement addIPDButtonMethod() {
 	return addIPDButton;
 }
 
-
 public WebElement enquiryNoMethod() {
 	
 	Select s = new Select(enquiryNo);
@@ -125,14 +125,12 @@ public WebElement enquiryNoMethod() {
 
 
 public void enquiryNoSearchMethod() {
-	
-	
+		
 	enquiryNo.click();
 	enquiryNoSearch.click();
     enquiryNoSearch.sendKeys("15");
 	enquiryNoSearch.sendKeys(Keys.ENTER);
 	
-
 }
 
 public void  uploadMethod() throws AWTException {
@@ -189,31 +187,34 @@ public void wardSearchMethod(String wardSelect) throws InterruptedException {
 	}
 
 
-public void bedMethod() {
+public void bedMethod() throws InterruptedException {
 	
-	  driver.findElement(By.xpath("//*[@id='manage']/div[3]/form/table/tbody/tr[4]/td[2]/div/div[4]/input")).click();
-	
+	  //driver.findElement(By.xpath("/html/body/div[1]/div[7]/div[2]/div[3]/form/table/tbody/tr[4]/td[2]/div/div[41]/input")).click();
 	  
-	  /*  List<WebElement> bakeries = bed;
+	  
+	  
+	   /* List<WebElement> bakeries = bed;
        for (WebElement webElement : bakeries) {
         String name = webElement.getText();
-    //    System.out.println(name);
+        System.out.println(name); */
         
-      // System.out.println(webElement.getAttribute(name));
-       webElement.click(); */
-     //  System.out.println("Test");
+        String beforeXpath = "/html/body/div[1]/div[7]/div[2]/div[3]/form/table/tbody/tr[4]/td[2]/div/div[";
+        String afterXpath = "]";
         
-        
-     
-      
-      /*  if ("15".equals(webElement.getText())) 
-        {
-        	webElement.click();
-            
-       }       */
+        for(int i=42;i<=45;i++) {
+        	String actualXpath = beforeXpath+i+afterXpath;
+        	WebElement element =driver.findElement(By.xpath(actualXpath));
+        	System.out.println(element.getText());
+        	element.click();
+        }
+   	
+        // if(element.getText().equals("COMMON WARD")){
+      //  		Thread.sleep(3000);
+      //  		element.click();
+      //  	} 
+        	
+        }
 
-} 
-  
 
 public void admissionDateMethod() {
 	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
