@@ -2,7 +2,6 @@ package Academy.E2EProject;
 
 import java.awt.AWTException;
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,8 +27,7 @@ import resources.base;
 public class LoginPageMain extends base { 
 //The extends keyword extends a class (indicates that a class is inherited from another class).
 
-	public WebDriver driver;
-	
+	static WebDriver driver;
 	
     @BeforeTest 
     
@@ -57,8 +55,7 @@ public class LoginPageMain extends base {
             String actualTitle = lp.getTitleMethod().getText();
      	    Assert.assertEquals(actualTitle,"DashBoard");
          	Assert.assertTrue(lp.getTitleMethod().isDisplayed());
-         
-}
+         }
 
 
 	//@Test(priority = 1)
@@ -121,23 +118,17 @@ public class LoginPageMain extends base {
 	 
 	    IPDReg ipd1 =new IPDReg(driver);
 	    ipd1.scroll();
-	    
-	    ipdDet.weightMethod().sendKeys("25");
+        ipdDet.weightMethod().sendKeys("25");
 	    ipd1.scroll();
 	    ipdDet.saveButtonMethod().click();
 	    Thread.sleep(2000);
 	    String succ = ipdDet.updateSuccessMessageMethod().getText();
 	    Assert.assertTrue(succ.contains("IPD details updated successfully"));
-	    
-	   // Assert.assertTrue(edit.contains("Edit IPD"));
-		
-	//	String popup = ipdDet.windowPopupMethod().getText();
-	//	System.out.println(popup);
-	//	ipdDet.windowPopupMethod();
-		//Assert.assertTrue(popup.contains("Patient's History"));
-		
+	
 	}
 
+	
+	
     @AfterTest 
     public void after() {
     //	driver.close();

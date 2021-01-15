@@ -54,6 +54,8 @@ public class ipdDetails {
 	@FindBy (xpath = "/html/body/div[1]/div[7]/div[1]/form/div/div")
 	WebElement updateSuccessMessage;
 	
+	
+	
 	public WebElement ipdNoSearchMethod(String ipdNo) {
 		
 		ipdNoSearch.sendKeys(ipdNo);
@@ -76,8 +78,7 @@ public class ipdDetails {
 		
 	}
     
-
-    public WebElement ipdDetailsPageVerifyMethod() {
+   public WebElement ipdDetailsPageVerifyMethod() {
     	
  		return ipdDetailsPageVerify;
  		
@@ -113,7 +114,7 @@ public class ipdDetails {
     	
  		return editVerify;
  		
- 	}
+ }
 
  
  public WebElement weightMethod() {
@@ -135,7 +136,5 @@ public class ipdDetails {
 		return updateSuccessMessage;
 		
 	}
- 
-
  
 }

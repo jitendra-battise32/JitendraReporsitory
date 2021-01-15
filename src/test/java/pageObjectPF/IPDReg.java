@@ -25,7 +25,6 @@ public class IPDReg {
 	    PageFactory.initElements(driver, this);
 	}
 	
-
 	@FindBy (xpath="/html/body/div[1]/div[5]")
 	 WebElement drawerMenu;
 	

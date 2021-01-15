@@ -29,11 +29,7 @@ public class AddEnquiry {
 	
 	@FindBy (xpath = "//*[@class='title-admin']")
 	private WebElement veriftTitltleEn;
-	
-	
-	
-	
-	
+
 	@FindBy (xpath="//*[@class='add button']")
 	private WebElement AddEnquiryButton;
 	
