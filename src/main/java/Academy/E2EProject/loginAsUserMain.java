@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import pageObjectPF.loginAsUser;
+import pageObjectPF.loginAsDoctorAttendPatient;
 import resources.base;
 
 public class loginAsUserMain extends base {

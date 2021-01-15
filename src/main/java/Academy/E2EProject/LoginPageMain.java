@@ -19,6 +19,8 @@ import pageObjectPF.LoginPage;
 import pageObjectPF.OPDRegistration;
 
 import pageObjectPF.ipdDetails;
+import pageObjectPF.loginAsDoctorAttendPatient;
+
 import resources.Xls_Reader;
 import resources.base;
 
@@ -58,7 +60,7 @@ public class LoginPageMain extends base {
          }
 
 
-	//@Test(priority = 1)
+//	@Test(priority = 1)
 	 
 	public void ipdRegistration() throws InterruptedException, AWTException {
 		
@@ -99,7 +101,7 @@ public class LoginPageMain extends base {
 
 	}
 	
-	@Test(priority = 1)
+ //	@Test(priority = 2)
 	public void ipdDetailsMethods() throws InterruptedException {
 		
 		driver.navigate().to("http://projects.teamgrowth.net/HMS-Rajebahadur/IPDs#NoBack");
@@ -107,7 +109,7 @@ public class LoginPageMain extends base {
 		ipdDetails ipdDet = new ipdDetails(driver);
 		ipdDet.ipdNoSearchMethod("IPD/2021/Jan/00022");
 		Thread.sleep(3000);
-		ipdDet.detailsButtonMethod().click();
+		ipdDet.actionButtonMethod().click();
 		ipdDet.clickDetailsMethod().click();
 	    String ipd = ipdDet.ipdDetailsPageVerifyMethod().getText();
 		Assert.assertTrue(ipd.contains("IPD Details"));
@@ -124,9 +126,96 @@ public class LoginPageMain extends base {
 	    Thread.sleep(2000);
 	    String succ = ipdDet.updateSuccessMessageMethod().getText();
 	    Assert.assertTrue(succ.contains("IPD details updated successfully"));
+	  
 	
 	}
 
+	
+	@Test(priority = 3)
+	
+	public void loginAsDoctorAttend() throws InterruptedException {
+	  
+		driver.navigate().to("http://projects.teamgrowth.net/HMS-Rajebahadur/Users#NoBack");
+		loginAsDoctorAttendPatient doc = new loginAsDoctorAttendPatient(driver);
+		doc.nameSearchMethod("drviki");
+		Thread.sleep(2000);
+		doc.actionbuttonMethod().click();
+		Thread.sleep(2000);
+		doc.loginAsUserMethod().click();
+		driver.switchTo().alert().accept();
+		String dash = doc.dashboardVerifyMethod().getText();
+		Assert.assertTrue(dash.contains("Pendency List"));
+        driver.navigate().to("http://projects.teamgrowth.net/HMS-Rajebahadur/IPDs#NoBack");
+        ipdDetails ipdDet = new ipdDetails(driver);
+		ipdDet.ipdNoSearchMethod("IPD/2021/Jan/00022");
+		ipdDet.actionButtonMethod().click();
+		doc.attendMethod().click();
+		String attendIOD = doc.verifyAttendIPDpageMethod().getText();
+		Assert.assertTrue(attendIOD.contains("Attend IPD"));
+		Thread.sleep(2000);
+		IPDReg ipd1 =new IPDReg(driver);
+		ipd1.scroll();
+		ipd1.scroll();
+		ipd1.scroll();
+		ipd1.scroll();
+		doc.saveAttendIPDMethod().click();
+		String attend = doc.attendIPDSuccessMethod().getText();
+		Assert.assertTrue(attend.contains("IPD attended successfully."));
+		
+
+	}
+	
+	@Test(priority = 4)
+	public void loginAsDoctorAddRoundNotes() throws InterruptedException {
+	    loginAsDoctorAttendPatient doc = new loginAsDoctorAttendPatient(driver);
+	    Thread.sleep(2000);
+		doc.actionbuttonMethod().click();
+		doc.addRoundNotesButtonMethod().click();
+		String  round= doc.roundNotesPageMethod().getText();
+		Assert.assertTrue(round.contains("Add Round Note"));
+		Thread.sleep(1000);
+		IPDReg ipd1 =new IPDReg(driver);
+		ipd1.scroll();
+		doc.dateRoundNoteMethod();
+	    doc.clinicalNotesMethod("Testing the clinical Notes");
+	    ipd1.scroll();
+	    Thread.sleep(2000);
+	    doc.saveAddRoundNotesMethod().click();
+		String roundSucc = doc.roundNotesSuccessMethod().getText();
+		Assert.assertTrue(roundSucc.contains("Round Note details added successfully."));
+	
+	}
+	
+	@Test(priority = 5)
+	public void loginAsDoctorAddPrescription() throws InterruptedException {
+	   	    loginAsDoctorAttendPatient doc = new loginAsDoctorAttendPatient(driver);
+		    Thread.sleep(2000);
+			doc.actionbuttonMethod().click();
+			doc.addPrescriptionButtonMethod().click();
+			String presc = doc.prescriptionPageMethod().getText();
+			Assert.assertTrue(presc.contains("Add Prescription"));
+			Thread.sleep(2000);
+			IPDReg ipd1 =new IPDReg(driver);
+			ipd1.scroll();
+			doc.addMedicineDropDownMethod().click();
+			doc.searchMedicineMethod("Ashpi");
+			doc.durationMethod("30");
+			//driver.findElement(By.xpath("//div[@id='_dose1_chosen']//span[contains(text(),'0')")).click();
+			doc.dayMethod();
+		//	doc.midMethod();
+		//	doc.nightMethod();
+			//doc.nightMethod();
+			doc.dosingInstructorMethod().click();
+			doc.dosingSearchMethod("6");
+			doc.addMedicineMethod().click();
+			ipd1.scroll();
+			doc.savePresciptionMethod().click();
+			String  pres = doc.successPresMethod().getText();
+			Assert.assertTrue(pres.contains("Prescription updated successfully for IPD."));
+		
+		
+	}
+	
 	
 	
     @AfterTest 

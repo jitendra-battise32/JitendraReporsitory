@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16708" started-at="2021-01-14T10:38:34Z" finished-at="2021-01-14T10:38:51Z">
+  <suite name="Default suite" duration-ms="42763" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:18:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16708" started-at="2021-01-14T10:38:34Z" finished-at="2021-01-14T10:38:51Z">
+    <test name="Default test" duration-ms="42763" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:18:18Z">
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="7478" started-at="2021-01-14T10:38:34Z" finished-at="2021-01-14T10:38:42Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="12395" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:17:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="2125" started-at="2021-01-14T10:38:42Z" finished-at="2021-01-14T10:38:44Z">
+        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="7714" started-at="2021-01-15T11:17:47Z" finished-at="2021-01-15T11:17:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="ipdDetailsMethods()[pri:1, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="ipdDetailsMethods" duration-ms="7069" started-at="2021-01-14T10:38:44Z" finished-at="2021-01-14T10:38:51Z">
+        <test-method status="PASS" signature="loginAsDoctorAttend()[pri:3, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAttend" duration-ms="10881" started-at="2021-01-15T11:17:55Z" finished-at="2021-01-15T11:18:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ipdDetailsMethods -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-14T10:38:51Z" finished-at="2021-01-14T10:38:51Z">
+        </test-method> <!-- loginAsDoctorAttend -->
+        <test-method status="PASS" signature="loginAsDoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAddRoundNotes" duration-ms="5654" started-at="2021-01-15T11:18:06Z" finished-at="2021-01-15T11:18:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDoctorAddRoundNotes -->
+        <test-method status="PASS" signature="loginAsDoctorAddPrescription()[pri:5, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAddPrescription" duration-ms="6094" started-at="2021-01-15T11:18:12Z" finished-at="2021-01-15T11:18:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDoctorAddPrescription -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-15T11:18:18Z" finished-at="2021-01-15T11:18:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

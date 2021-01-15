@@ -66,7 +66,7 @@ public class ipdDetails {
 	}
 
 	
-    public WebElement detailsButtonMethod() {
+    public WebElement actionButtonMethod() {
 	
 		return detailsButton;
 		
@@ -86,6 +86,7 @@ public class ipdDetails {
      
     public void historyOptionMethod()
     {
+    	
     	String parentHandle = driver.getWindowHandle(); // get the current window handle
     	historyOption.click(); // click some link that opens a new window
 
@@ -96,8 +97,8 @@ public class ipdDetails {
     	
         String get = driver.findElement(By.xpath("//*[@id='TB_ajaxWindowTitle']")).getText();
         System.out.println(get);
-       // driver.close(); // close newly opened window when done with it
-       // driver.switchTo().window(parentHandle); // switch back to the original window
+        // driver.close(); // close newly opened window when done with it
+        // driver.switchTo().window(parentHandle); // switch back to the original window
         driver.findElement(By.xpath("//*[@id='TB_closeWindowButton']")).click();
        
      }
