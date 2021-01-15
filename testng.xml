@@ -9,7 +9,6 @@
   <test name="Login Page Test Case">
     <classes>
       <class name="Academy.E2EProject.LoginPageMain"/> 
-      <class name="Academy.E2EProject.loginAsUserMain"/> 
     </classes>
 </test> 
 

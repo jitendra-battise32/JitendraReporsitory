@@ -29,7 +29,7 @@ import resources.base;
 public class LoginPageMain extends base { 
 //The extends keyword extends a class (indicates that a class is inherited from another class).
 
-	static WebDriver driver;
+	public WebDriver driver;
 	
     @BeforeTest 
     
