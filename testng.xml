@@ -9,7 +9,11 @@
   <test name="Login Page Test Case">
     <classes>
       <class name="Academy.E2EProject.LoginPageMain"/> 
-    </classes>
+      <class name="Academy.E2EProject.ipdAddUpdateMain"/>
+      <class name="Academy.E2EProject.attendPatient"/>
+      <class name="Academy.E2EProject.addRoundNotes"/>
+      <class name="Academy.E2EProject.addPrescription"/>
+   </classes>
 </test> 
 
    <test name="Add Enquiry Test Case">

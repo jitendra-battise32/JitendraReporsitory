@@ -1,37 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42763" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:18:18Z">
+  <suite name="HMS Rajbahadur" duration-ms="116337" started-at="2021-01-18T12:35:42Z" finished-at="2021-01-18T12:37:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42763" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:18:18Z">
+    <test name="Login Page Test Case" duration-ms="67141" started-at="2021-01-18T12:35:42Z" finished-at="2021-01-18T12:36:49Z">
+      <class name="Academy.E2EProject.addRoundNotes">
+        <test-method status="PASS" signature="DoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.addRoundNotes@7b227d8d]" name="DoctorAddRoundNotes" duration-ms="6161" started-at="2021-01-18T12:36:37Z" finished-at="2021-01-18T12:36:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoctorAddRoundNotes -->
+      </class> <!-- Academy.E2EProject.addRoundNotes -->
+      <class name="Academy.E2EProject.attendPatient">
+        <test-method status="PASS" signature="DoctorAttendPatient()[pri:3, instance:Academy.E2EProject.attendPatient@4c1d9d4b]" name="DoctorAttendPatient" duration-ms="8907" started-at="2021-01-18T12:36:28Z" finished-at="2021-01-18T12:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoctorAttendPatient -->
+      </class> <!-- Academy.E2EProject.attendPatient -->
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="12395" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:17:47Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="before" is-config="true" duration-ms="8379" started-at="2021-01-18T12:35:42Z" finished-at="2021-01-18T12:35:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="7714" started-at="2021-01-15T11:17:47Z" finished-at="2021-01-15T11:17:55Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="login" duration-ms="3482" started-at="2021-01-18T12:35:50Z" finished-at="2021-01-18T12:35:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="loginAsDoctorAttend()[pri:3, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAttend" duration-ms="10881" started-at="2021-01-15T11:17:55Z" finished-at="2021-01-15T11:18:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsDoctorAttend -->
-        <test-method status="PASS" signature="loginAsDoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAddRoundNotes" duration-ms="5654" started-at="2021-01-15T11:18:06Z" finished-at="2021-01-15T11:18:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsDoctorAddRoundNotes -->
-        <test-method status="PASS" signature="loginAsDoctorAddPrescription()[pri:5, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAddPrescription" duration-ms="6094" started-at="2021-01-15T11:18:12Z" finished-at="2021-01-15T11:18:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsDoctorAddPrescription -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-15T11:18:18Z" finished-at="2021-01-15T11:18:18Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="after" is-config="true" duration-ms="1" started-at="2021-01-18T12:36:49Z" finished-at="2021-01-18T12:36:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- Academy.E2EProject.LoginPageMain -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Academy.E2EProject.addPrescription">
+        <test-method status="PASS" signature="DoctorAddPrescription()[pri:5, instance:Academy.E2EProject.addPrescription@7219ec67]" name="DoctorAddPrescription" duration-ms="5641" started-at="2021-01-18T12:36:43Z" finished-at="2021-01-18T12:36:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoctorAddPrescription -->
+      </class> <!-- Academy.E2EProject.addPrescription -->
+      <class name="Academy.E2EProject.ipdAddUpdateMain">
+        <test-method status="FAIL" signature="IPDRegistration()[pri:1, instance:Academy.E2EProject.ipdAddUpdateMain@12d4bf7e]" name="IPDRegistration" duration-ms="26733" started-at="2021-01-18T12:35:54Z" finished-at="2021-01-18T12:36:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Academy.E2EProject.ipdAddUpdateMain.IPDRegistration(ipdAddUpdateMain.java:67)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IPDRegistration -->
+        <test-method status="PASS" signature="IPDUpdate()[pri:2, instance:Academy.E2EProject.ipdAddUpdateMain@12d4bf7e]" name="IPDUpdate" duration-ms="7157" started-at="2021-01-18T12:36:21Z" finished-at="2021-01-18T12:36:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IPDUpdate -->
+      </class> <!-- Academy.E2EProject.ipdAddUpdateMain -->
+    </test> <!-- Login Page Test Case -->
+    <test name="Add Enquiry Test Case" duration-ms="21917" started-at="2021-01-18T12:36:50Z" finished-at="2021-01-18T12:37:12Z">
+      <class name="Academy.E2EProject.AddEnquiryMain">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="before" is-config="true" duration-ms="8626" started-at="2021-01-18T12:36:50Z" finished-at="2021-01-18T12:36:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="enquiryAdd()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="enquiryAdd" duration-ms="13288" started-at="2021-01-18T12:36:59Z" finished-at="2021-01-18T12:37:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enquiryAdd -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="after" is-config="true" duration-ms="1" started-at="2021-01-18T12:37:12Z" finished-at="2021-01-18T12:37:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- Academy.E2EProject.AddEnquiryMain -->
+    </test> <!-- Add Enquiry Test Case -->
+    <test name="OPD Registration Test Case" duration-ms="25563" started-at="2021-01-18T12:37:12Z" finished-at="2021-01-18T12:37:38Z">
+      <class name="Academy.E2EProject.OPDRegistrationMain">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="before" is-config="true" duration-ms="13054" started-at="2021-01-18T12:37:12Z" finished-at="2021-01-18T12:37:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="FAIL" signature="OPDRegMethod()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="OPDRegMethod" duration-ms="11936" started-at="2021-01-18T12:37:25Z" finished-at="2021-01-18T12:37:37Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at Academy.E2EProject.OPDRegistrationMain.OPDRegMethod(OPDRegistrationMain.java:111)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OPDRegMethod -->
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="after" is-config="true" duration-ms="0" started-at="2021-01-18T12:37:38Z" finished-at="2021-01-18T12:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- Academy.E2EProject.OPDRegistrationMain -->
+    </test> <!-- OPD Registration Test Case -->
+  </suite> <!-- HMS Rajbahadur -->
 </testng-results>

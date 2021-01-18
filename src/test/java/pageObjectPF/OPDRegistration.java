@@ -13,9 +13,8 @@ import org.openqa.selenium.support.ui.Select;
 public class OPDRegistration {
 	
 	public WebDriver driver;
-	
-	
 	public OPDRegistration(WebDriver driver) {
+		 super();
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
 	}
@@ -79,7 +78,7 @@ public class OPDRegistration {
 		
 		//return enquiryNo;
 		enquiryNo.click();
-	    enquiryNoSearch.sendKeys("90");
+	    enquiryNoSearch.sendKeys("95");
 		enquiryNoSearch.sendKeys(Keys.ENTER);
 	   // WebElement builder = driver.findElement(By.xpath("/html/body/div[1]/div[7]/div[2]/div[3]/form/table/tbody/tr[1]/td[2]/div/div/div/input"));
 	 //   builder.sendKeys("41");

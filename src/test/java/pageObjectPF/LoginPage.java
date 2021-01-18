@@ -8,6 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	
 	public WebDriver driver;
+	public LoginPage(WebDriver driver) {
+		 super();
+	    this.driver = driver;
+	    PageFactory.initElements(driver, this);
+	}
 	
 	
 	@FindBy (xpath="//input[@id='user_name']")
@@ -29,10 +34,7 @@ public class LoginPage {
 	@FindBy (xpath ="//*[@class='box-body']")
 	WebElement dashBoardReports;
 	
-	public LoginPage(WebDriver driver) {
-	    this.driver = driver;
-	    PageFactory.initElements(driver, this);
-	}
+
 
 	public WebElement usernameMethod() {
 		return userName;

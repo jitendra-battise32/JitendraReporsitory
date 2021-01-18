@@ -16,6 +16,7 @@ public class ipdDetails {
 	WebDriver driver;
 	
 	public ipdDetails(WebDriver driver) {
+		 super();
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
 	}
