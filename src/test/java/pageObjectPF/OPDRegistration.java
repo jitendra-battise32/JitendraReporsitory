@@ -50,6 +50,8 @@ public class OPDRegistration {
 	@FindBy (xpath = "//*[@class='btn-green']")
 	WebElement saveOPD;
 	
+	
+	
 	@FindBy (xpath = "//*[@class='success-icon']")
 	WebElement opdSuccessMessage;
 

@@ -1,7 +1,7 @@
 package Academy.E2EProject;
 
 import org.openqa.selenium.WebDriver;
-import org.seleniumhq.jetty9.util.thread.TryExecutor;
+//import org.seleniumhq.jetty9.util.thread.TryExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -37,6 +37,7 @@ public class addRoundNotes extends base {
 	    ipd1.scroll();
 	    Thread.sleep(2000);
 	    doc.saveAddRoundNotesMethod().click();
+	    
 		String roundSucc = doc.roundNotesSuccessMethod().getText();
 		Assert.assertTrue(roundSucc.contains("Round Note details added successfully."));
 	

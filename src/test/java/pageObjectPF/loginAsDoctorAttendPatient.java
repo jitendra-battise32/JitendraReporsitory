@@ -14,6 +14,7 @@ public class loginAsDoctorAttendPatient {
 public WebDriver driver;
 
 	
+
 	public loginAsDoctorAttendPatient(WebDriver driver)
 	{
 		super();

@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="HMS Rajbahadur" duration-ms="116337" started-at="2021-01-18T12:35:42Z" finished-at="2021-01-18T12:37:38Z">
+  <suite name="HMS Rajbahadur" duration-ms="137759" started-at="2021-01-18T13:35:29Z" finished-at="2021-01-18T13:37:47Z">
     <groups>
     </groups>
-    <test name="Login Page Test Case" duration-ms="67141" started-at="2021-01-18T12:35:42Z" finished-at="2021-01-18T12:36:49Z">
+    <test name="Login Page Test Case" duration-ms="73759" started-at="2021-01-18T13:35:29Z" finished-at="2021-01-18T13:36:43Z">
       <class name="Academy.E2EProject.addRoundNotes">
-        <test-method status="PASS" signature="DoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.addRoundNotes@7b227d8d]" name="DoctorAddRoundNotes" duration-ms="6161" started-at="2021-01-18T12:36:37Z" finished-at="2021-01-18T12:36:43Z">
+        <test-method status="PASS" signature="DoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.addRoundNotes@7b227d8d]" name="DoctorAddRoundNotes" duration-ms="5672" started-at="2021-01-18T13:36:30Z" finished-at="2021-01-18T13:36:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoctorAddRoundNotes -->
       </class> <!-- Academy.E2EProject.addRoundNotes -->
       <class name="Academy.E2EProject.attendPatient">
-        <test-method status="PASS" signature="DoctorAttendPatient()[pri:3, instance:Academy.E2EProject.attendPatient@4c1d9d4b]" name="DoctorAttendPatient" duration-ms="8907" started-at="2021-01-18T12:36:28Z" finished-at="2021-01-18T12:36:37Z">
+        <test-method status="PASS" signature="DoctorAttendPatient()[pri:3, instance:Academy.E2EProject.attendPatient@4c1d9d4b]" name="DoctorAttendPatient" duration-ms="8621" started-at="2021-01-18T13:36:22Z" finished-at="2021-01-18T13:36:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoctorAttendPatient -->
       </class> <!-- Academy.E2EProject.attendPatient -->
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="before" is-config="true" duration-ms="8379" started-at="2021-01-18T12:35:42Z" finished-at="2021-01-18T12:35:50Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="before" is-config="true" duration-ms="12334" started-at="2021-01-18T13:35:29Z" finished-at="2021-01-18T13:35:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="login" duration-ms="3482" started-at="2021-01-18T12:35:50Z" finished-at="2021-01-18T12:35:54Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="login" duration-ms="3188" started-at="2021-01-18T13:35:41Z" finished-at="2021-01-18T13:35:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="after" is-config="true" duration-ms="1" started-at="2021-01-18T12:36:49Z" finished-at="2021-01-18T12:36:49Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@14d3bc22]" name="after" is-config="true" duration-ms="0" started-at="2021-01-18T13:36:43Z" finished-at="2021-01-18T13:36:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- Academy.E2EProject.LoginPageMain -->
       <class name="Academy.E2EProject.addPrescription">
-        <test-method status="PASS" signature="DoctorAddPrescription()[pri:5, instance:Academy.E2EProject.addPrescription@7219ec67]" name="DoctorAddPrescription" duration-ms="5641" started-at="2021-01-18T12:36:43Z" finished-at="2021-01-18T12:36:49Z">
+        <test-method status="PASS" signature="DoctorAddPrescription()[pri:5, instance:Academy.E2EProject.addPrescription@7219ec67]" name="DoctorAddPrescription" duration-ms="6583" started-at="2021-01-18T13:36:36Z" finished-at="2021-01-18T13:36:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DoctorAddPrescription -->
       </class> <!-- Academy.E2EProject.addPrescription -->
       <class name="Academy.E2EProject.ipdAddUpdateMain">
-        <test-method status="FAIL" signature="IPDRegistration()[pri:1, instance:Academy.E2EProject.ipdAddUpdateMain@12d4bf7e]" name="IPDRegistration" duration-ms="26733" started-at="2021-01-18T12:35:54Z" finished-at="2021-01-18T12:36:20Z">
+        <test-method status="FAIL" signature="IPDRegistration()[pri:1, instance:Academy.E2EProject.ipdAddUpdateMain@12d4bf7e]" name="IPDRegistration" duration-ms="28844" started-at="2021-01-18T13:35:45Z" finished-at="2021-01-18T13:36:13Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -75,35 +75,35 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IPDRegistration -->
-        <test-method status="PASS" signature="IPDUpdate()[pri:2, instance:Academy.E2EProject.ipdAddUpdateMain@12d4bf7e]" name="IPDUpdate" duration-ms="7157" started-at="2021-01-18T12:36:21Z" finished-at="2021-01-18T12:36:28Z">
+        <test-method status="PASS" signature="IPDUpdate()[pri:2, instance:Academy.E2EProject.ipdAddUpdateMain@12d4bf7e]" name="IPDUpdate" duration-ms="7208" started-at="2021-01-18T13:36:14Z" finished-at="2021-01-18T13:36:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IPDUpdate -->
       </class> <!-- Academy.E2EProject.ipdAddUpdateMain -->
     </test> <!-- Login Page Test Case -->
-    <test name="Add Enquiry Test Case" duration-ms="21917" started-at="2021-01-18T12:36:50Z" finished-at="2021-01-18T12:37:12Z">
+    <test name="Add Enquiry Test Case" duration-ms="25503" started-at="2021-01-18T13:36:45Z" finished-at="2021-01-18T13:37:11Z">
       <class name="Academy.E2EProject.AddEnquiryMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="before" is-config="true" duration-ms="8626" started-at="2021-01-18T12:36:50Z" finished-at="2021-01-18T12:36:59Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="before" is-config="true" duration-ms="12544" started-at="2021-01-18T13:36:45Z" finished-at="2021-01-18T13:36:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="enquiryAdd()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="enquiryAdd" duration-ms="13288" started-at="2021-01-18T12:36:59Z" finished-at="2021-01-18T12:37:12Z">
+        <test-method status="PASS" signature="enquiryAdd()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="enquiryAdd" duration-ms="12955" started-at="2021-01-18T13:36:58Z" finished-at="2021-01-18T13:37:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enquiryAdd -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="after" is-config="true" duration-ms="1" started-at="2021-01-18T12:37:12Z" finished-at="2021-01-18T12:37:12Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.AddEnquiryMain@163e4e87]" name="after" is-config="true" duration-ms="0" started-at="2021-01-18T13:37:11Z" finished-at="2021-01-18T13:37:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- Academy.E2EProject.AddEnquiryMain -->
     </test> <!-- Add Enquiry Test Case -->
-    <test name="OPD Registration Test Case" duration-ms="25563" started-at="2021-01-18T12:37:12Z" finished-at="2021-01-18T12:37:38Z">
+    <test name="OPD Registration Test Case" duration-ms="35524" started-at="2021-01-18T13:37:11Z" finished-at="2021-01-18T13:37:47Z">
       <class name="Academy.E2EProject.OPDRegistrationMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="before" is-config="true" duration-ms="13054" started-at="2021-01-18T12:37:12Z" finished-at="2021-01-18T12:37:25Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="before" is-config="true" duration-ms="22407" started-at="2021-01-18T13:37:11Z" finished-at="2021-01-18T13:37:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="OPDRegMethod()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="OPDRegMethod" duration-ms="11936" started-at="2021-01-18T12:37:25Z" finished-at="2021-01-18T12:37:37Z">
+        <test-method status="FAIL" signature="OPDRegMethod()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="OPDRegMethod" duration-ms="12711" started-at="2021-01-18T13:37:33Z" finished-at="2021-01-18T13:37:46Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -139,7 +139,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OPDRegMethod -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="after" is-config="true" duration-ms="0" started-at="2021-01-18T12:37:38Z" finished-at="2021-01-18T12:37:38Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.OPDRegistrationMain@159f197]" name="after" is-config="true" duration-ms="0" started-at="2021-01-18T13:37:47Z" finished-at="2021-01-18T13:37:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
