@@ -82,7 +82,7 @@ public class AddEnquiryMain extends base {
 		}
 		
 		catch(Exception e) {
-			 System.out.println("Something Went Wrong in Enquiry Method");
+			 System.out.println("Something Went Wrong in Enquiry");
 			 System.out.println(e.getMessage());
 		//	 System.out.println(e.getStackTrace());
 			 test.fail(e);
