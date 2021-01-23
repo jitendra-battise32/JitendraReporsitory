@@ -19,9 +19,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class IPDReg {
+	
+	
+	
 	public WebDriver driver;
     
 	public IPDReg(WebDriver driver) {
+		 super();
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
 	}
@@ -197,11 +201,11 @@ public void bedMethod() throws InterruptedException {
        for (WebElement webElement : bakeries) {
         String name = webElement.getText();
         System.out.println(name); */
-        
-        String beforeXpath = "/html/body/div[1]/div[7]/div[2]/div[3]/form/table/tbody/tr[4]/td[2]/div/div[";
+	                           
+         String beforeXpath = "/html/body/div[1]/div[7]/div[2]/div[3]/form/table/tbody/tr[4]/td[2]/div/div[";
         String afterXpath = "]";
         
-        for(int i=42;i<=45;i++) {
+        for(int i=24;i<=26;i++) {
         	String actualXpath = beforeXpath+i+afterXpath;
         	WebElement element =driver.findElement(By.xpath(actualXpath));
         	System.out.println(element.getText());

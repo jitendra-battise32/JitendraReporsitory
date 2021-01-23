@@ -9,10 +9,13 @@ public WebDriver driver;
 
 	
 	public attendPatient(WebDriver driver) {
+		 super();
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
 	}
 
+	
+	
 
 	
 	

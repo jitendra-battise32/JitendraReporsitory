@@ -26,9 +26,6 @@ public class Listeners extends base implements ITestListener{
 		
 		   test = extent.createTest(result.getMethod().getMethodName());  	 
 		   extentTest.set(test);
-		 
-
-		
 	}
 
 	public void onFinish(ITestContext result) {
@@ -47,9 +44,7 @@ public class Listeners extends base implements ITestListener{
 		
 	}
 	
-	
-
-	public void onTestFailure(ITestResult result) {
+     public void onTestFailure(ITestResult result) {
 		extentTest.get().fail(result.getThrowable());
 		WebDriver driver = null ;
 		// TODO Auto-generated method stub
@@ -66,7 +61,7 @@ public class Listeners extends base implements ITestListener{
 	   }
        //Now we need to call the getScreenshot method from our base class
    try {
-	   extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName,driver), result.getMethod().getMethodName());
+	   extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName/*driver*/), result.getMethod().getMethodName());
 
 	//	getScreenShotPath(testMethodName,driver);
 	} catch (IOException e) {

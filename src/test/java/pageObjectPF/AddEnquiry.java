@@ -16,11 +16,12 @@ public class AddEnquiry {
 	public WebDriver driver;
 	
 
-	
 	public AddEnquiry(WebDriver driver) {
+	     super();
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
 	}
+	
 
 	@FindBy (xpath="/html/body/div[1]/div[5]")
 	private WebElement drawerMenu;
@@ -33,6 +34,8 @@ public class AddEnquiry {
 
 	@FindBy (xpath="//*[@class='add button']")
 	private WebElement AddEnquiryButton;
+	
+	
 	
 	@FindBy (xpath="//*[@id='person_name']")
 	private WebElement personName;

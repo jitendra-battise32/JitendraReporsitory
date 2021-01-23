@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Academy.E2EProject.LoginPageMain">
+      <class name="Academy.E2EProject.NewTest">
         <methods>
+          <include name="test"/>
           <include name="before"/>
-          <include name="loginAsDoctorAddPrescription"/>
-          <include name="after"/>
         </methods>
-      </class> <!-- Academy.E2EProject.LoginPageMain -->
+      </class> <!-- Academy.E2EProject.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

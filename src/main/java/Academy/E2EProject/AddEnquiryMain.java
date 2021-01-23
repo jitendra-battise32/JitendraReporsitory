@@ -10,16 +10,21 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import pageObjectPF.AddEnquiry;
 import pageObjectPF.LoginPage;
+import resources.ExtentReporterNG;
 import resources.Xls_Reader;
 import resources.base;
 
 public class AddEnquiryMain extends base {
   
 	public WebDriver driver;
-	
-	
+	ExtentTest test;
+	ExtentReports extent = ExtentReporterNG.getReportObject();
+
 	@BeforeTest
 	
 	public void before() throws IOException{
@@ -34,6 +39,7 @@ public class AddEnquiryMain extends base {
 	@Test//(dataProvider ="getData")
     public void enquiryAdd(/*String Username, String Password*/) throws IOException, InterruptedException {
 
+		try {
 		 Xls_Reader reader = new Xls_Reader(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\TestData.xlsx");
 			
          //int rowCount = reader.getRowCount("LoginCredentials");
@@ -73,6 +79,17 @@ public class AddEnquiryMain extends base {
 	    En.enquirySaveMethod().click();
 	    En.successMessageMethod().getText();
 	    System.out.println( En.successMessageMethod().getText());
+		}
+		
+		catch(Exception e) {
+			 System.out.println("Something Went Wrong in Enquiry");
+			 System.out.println(e.getMessage());
+		//	 System.out.println(e.getStackTrace());
+			 test.fail(e);
+	         Assert.fail();
+	         extent.flush();
+			}
+	   	    
 }
 	
 	/*  @DataProvider

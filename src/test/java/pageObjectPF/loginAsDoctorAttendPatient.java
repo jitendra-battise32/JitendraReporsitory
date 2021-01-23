@@ -13,8 +13,15 @@ public class loginAsDoctorAttendPatient {
 
 public WebDriver driver;
 
-    public loginAsDoctorAttendPatient(WebDriver driver)
+
+    //public loginAsDoctorAttendPatient(WebDriver driver)
+
+	
+
+	public loginAsDoctorAttendPatient(WebDriver driver)
+
 	{
+		super();
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
 	}
@@ -22,11 +29,11 @@ public WebDriver driver;
 	
 	@FindBy (xpath= "//*[@id='_name']")
 	WebElement nameSearch;
-	
-	@FindBy (xpath = "//*[@class='button']")
+	                ///html/body/div[1]/div[7]/div[1]/form/div/table[2]/tbody/tr/td[10]/div/div[1]/a
+	@FindBy (xpath = "/html/body/div[1]/div[7]/div[1]/form/div/table[2]/tbody/tr/td[6]/div/div[1]/a")
 	WebElement actionbutton;
-	
-	@FindBy (xpath = "//*[@href='/HMS-Rajebahadur/Users/LoginAsUser/10046']")
+	                ///html/body/div[1]/div[7]/div[1]/form/div/table[2]/tbody/tr/td[6]/div/div[2]/ul/li[5]/a
+	@FindBy (xpath = "/html/body/div[1]/div[7]/div[1]/form/div/table[2]/tbody/tr/td[6]/div/div[2]/ul/li[5]/a")
 	WebElement loginAsUser;
 	
 	@FindBy (xpath = "//*[@id='grid']/div[1]/div/div[1]")
@@ -47,6 +54,10 @@ public WebDriver driver;
 	
 	//=====================================
 	//Add Round Notes
+	
+	@FindBy (xpath = "/html/body/div[1]/div[7]/div[1]/form/div/table[2]/tbody/tr/td[10]/div/div[1]")
+	WebElement actionBut;
+	
 	
 	@FindBy (xpath = "//*[@href='/HMS-Rajebahadur/RoundNotes/Create/22']")
 	WebElement addRoundNotesButton;
@@ -69,6 +80,7 @@ public WebDriver driver;
     //==========================================
     
     //Add Prescription
+    
     
     @FindBy (xpath = "//*[@href='/HMS-Rajebahadur/IPDs/AddPrescriptions/22']")
     WebElement addPrescriptionButton;
@@ -197,6 +209,16 @@ public WebDriver driver;
     	
     	return roundNotesSuccess;
 	}
+    
+    
+    public WebElement actionBut()
+    {
+    	
+    	return actionBut;
+	}
+    
+    
+    
     
     public WebElement addPrescriptionButtonMethod()
     {

@@ -10,12 +10,15 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.beust.jcommander.JCommander.Builder;
 
 
 import pageObjectPF.LoginPage;
 
 import pageObjectPF.OPDRegistration;
+import resources.ExtentReporterNG;
 import resources.Xls_Reader;
 import resources.base;
 
@@ -24,6 +27,8 @@ public class OPDRegistrationMain extends base{
 
 	
 	public WebDriver driver;
+	ExtentTest test;
+	ExtentReports extent = ExtentReporterNG.getReportObject();
 	  
 	@BeforeTest 
 	
@@ -33,15 +38,13 @@ public class OPDRegistrationMain extends base{
 		    String urls = prop.getProperty("url");
 		    driver.get(urls);
 		    driver.manage().window().maximize();
-		    
-	    }
-		
-	
-		
-		@Test//(dataProvider ="getData")
+    } 
+
+	@Test
 		
 	        public void /*loginMethod*/ OPDRegMethod(/*String username, String password*/) throws IOException, InterruptedException {
 
+		try {
 			 Xls_Reader reader = new Xls_Reader(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\TestData.xlsx");
 				
           	//int rowCount = reader.getRowCount("LoginCredentials");
@@ -97,6 +100,20 @@ public class OPDRegistrationMain extends base{
          	
          	Assert.assertTrue(succMsg.contains("added successfully"));
         	//System.out.println(succMsg);
+		}
+		
+		
+		catch(Exception e) {
+			 System.out.println("Something Went Wrong in OPD Registration Method");
+			 System.out.println(e.getMessage());
+		//	 System.out.println(e.getStackTrace());
+			
+			 test.fail(e);
+	         Assert.fail();
+	         extent.flush();
+	        
+
+			}
          	
          	
 

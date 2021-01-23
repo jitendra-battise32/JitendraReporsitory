@@ -18,11 +18,12 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class base {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     public Properties prop;
 	
     
 public WebDriver initialisationBrowser() throws IOException {
+	
 	
     prop = new Properties();
     
@@ -31,9 +32,15 @@ public WebDriver initialisationBrowser() throws IOException {
 	
    // String browserName = System.getProperty("browser");
 
+
 	String browserName = prop.getProperty("browser");
+
+    //String browserName = prop.getProperty("browser");
+
 	
+    
 	
+    
 if (browserName.contains("chrome"))
 { 
      System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\lib\\chromedriver.exe");
@@ -59,11 +66,13 @@ if (browserName.equals("IE"))
 }
 
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 return driver;
+
+//return driver;
 }
 
-public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
+
+public String getScreenShotPath(String testCaseName /*WebDriver driver*/) throws IOException {
 	
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	//abovedriver is another driver we need to capture the  driver of the that particular test case
