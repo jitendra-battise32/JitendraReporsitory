@@ -32,6 +32,7 @@ public class attendPatient extends base{
 		driver.switchTo().alert().accept();
 		String dash = doc.dashboardVerifyMethod().getText();
 		Assert.assertTrue(dash.contains("Pendency List"));
+		System.out.println("Test");
         driver.navigate().to("http://projects.teamgrowth.net/HMS-Rajebahadur/IPDs#NoBack");
         ipdDetails ipdDet = new ipdDetails(driver);
 		ipdDet.ipdNoSearchMethod("IPD/2021/Jan/00022");
