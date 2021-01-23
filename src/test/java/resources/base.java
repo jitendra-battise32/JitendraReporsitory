@@ -21,6 +21,7 @@ public class base {
     public WebDriver driver;
     public Properties prop;
 	
+    
 public WebDriver initialisationBrowser() throws IOException {
 	
     prop = new Properties();
@@ -28,9 +29,9 @@ public WebDriver initialisationBrowser() throws IOException {
 	FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\data.properties");
 	prop.load(fis);
 	
-    String browserName = System.getProperty("browser");
+   // String browserName = System.getProperty("browser");
 
-//	String browserName = prop.getProperty("browser");
+	String browserName = prop.getProperty("browser");
 	
 	
 if (browserName.contains("chrome"))

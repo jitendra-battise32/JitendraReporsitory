@@ -8,6 +8,7 @@ public class ExtentReporterNG {
 	
 	
 	
+	
 	public static ExtentReports getReportObject() {
 		
 		

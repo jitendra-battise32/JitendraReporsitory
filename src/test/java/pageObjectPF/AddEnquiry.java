@@ -14,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 public class AddEnquiry {
 	
 	public WebDriver driver;
+	
 
 	
 	public AddEnquiry(WebDriver driver) {

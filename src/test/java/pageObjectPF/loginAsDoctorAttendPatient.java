@@ -13,8 +13,7 @@ public class loginAsDoctorAttendPatient {
 
 public WebDriver driver;
 
-	
-	public loginAsDoctorAttendPatient(WebDriver driver)
+    public loginAsDoctorAttendPatient(WebDriver driver)
 	{
 	    this.driver = driver;
 	    PageFactory.initElements(driver, this);
@@ -111,9 +110,7 @@ public WebDriver driver;
     
     @FindBy (xpath = "//*[@id='grid']/div")
     WebElement successPres;
-    
-    
-    
+      
 	public WebElement nameSearchMethod(String name) 
 	{
        nameSearch.sendKeys(name);
@@ -308,9 +305,7 @@ public WebDriver driver;
     	
     	return addMedicine;
 	}
-    
-    
-    
+  
     public WebElement savePresciptionMethod()
     {
     	

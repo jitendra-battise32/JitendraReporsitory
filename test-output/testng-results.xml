@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42763" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:18:18Z">
+  <suite name="Default suite" duration-ms="45396" started-at="2021-01-15T16:20:09Z" finished-at="2021-01-15T16:20:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42763" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:18:18Z">
+    <test name="Default test" duration-ms="45396" started-at="2021-01-15T16:20:09Z" finished-at="2021-01-15T16:20:55Z">
       <class name="Academy.E2EProject.LoginPageMain">
-        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="before" is-config="true" duration-ms="12395" started-at="2021-01-15T11:17:35Z" finished-at="2021-01-15T11:17:47Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:Academy.E2EProject.LoginPageMain@3e9b1010]" name="before" is-config="true" duration-ms="13222" started-at="2021-01-15T16:20:09Z" finished-at="2021-01-15T16:20:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginMethod" duration-ms="7714" started-at="2021-01-15T11:17:47Z" finished-at="2021-01-15T11:17:55Z">
+        <test-method status="PASS" signature="loginMethod()[pri:0, instance:Academy.E2EProject.LoginPageMain@3e9b1010]" name="loginMethod" duration-ms="4573" started-at="2021-01-15T16:20:23Z" finished-at="2021-01-15T16:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method status="PASS" signature="loginAsDoctorAttend()[pri:3, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAttend" duration-ms="10881" started-at="2021-01-15T11:17:55Z" finished-at="2021-01-15T11:18:06Z">
+        <test-method status="PASS" signature="loginAsDoctorAttend()[pri:3, instance:Academy.E2EProject.LoginPageMain@3e9b1010]" name="loginAsDoctorAttend" duration-ms="12875" started-at="2021-01-15T16:20:27Z" finished-at="2021-01-15T16:20:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDoctorAttend -->
-        <test-method status="PASS" signature="loginAsDoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAddRoundNotes" duration-ms="5654" started-at="2021-01-15T11:18:06Z" finished-at="2021-01-15T11:18:12Z">
+        <test-method status="PASS" signature="loginAsDoctorAddRoundNotes()[pri:4, instance:Academy.E2EProject.LoginPageMain@3e9b1010]" name="loginAsDoctorAddRoundNotes" duration-ms="6797" started-at="2021-01-15T16:20:40Z" finished-at="2021-01-15T16:20:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDoctorAddRoundNotes -->
-        <test-method status="PASS" signature="loginAsDoctorAddPrescription()[pri:5, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="loginAsDoctorAddPrescription" duration-ms="6094" started-at="2021-01-15T11:18:12Z" finished-at="2021-01-15T11:18:18Z">
+        <test-method status="PASS" signature="loginAsDoctorAddPrescription()[pri:5, instance:Academy.E2EProject.LoginPageMain@3e9b1010]" name="loginAsDoctorAddPrescription" duration-ms="7866" started-at="2021-01-15T16:20:47Z" finished-at="2021-01-15T16:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDoctorAddPrescription -->
-        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@57536d79]" name="after" is-config="true" duration-ms="0" started-at="2021-01-15T11:18:18Z" finished-at="2021-01-15T11:18:18Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:Academy.E2EProject.LoginPageMain@3e9b1010]" name="after" is-config="true" duration-ms="1" started-at="2021-01-15T16:20:55Z" finished-at="2021-01-15T16:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

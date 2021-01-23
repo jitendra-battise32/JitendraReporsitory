@@ -10,6 +10,8 @@ public class LoginPage {
 	public WebDriver driver;
 	
 	
+	
+	
 	@FindBy (xpath="//input[@id='user_name']")
 	WebElement userName;
 	

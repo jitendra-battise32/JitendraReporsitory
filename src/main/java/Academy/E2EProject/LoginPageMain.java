@@ -19,6 +19,7 @@ import pageObjectPF.LoginPage;
 import pageObjectPF.OPDRegistration;
 
 import pageObjectPF.ipdDetails;
+
 import pageObjectPF.loginAsDoctorAttendPatient;
 
 import resources.Xls_Reader;
@@ -46,7 +47,11 @@ public class LoginPageMain extends base {
         public void loginMethod() throws IOException, InterruptedException {
 		
 		    Xls_Reader reader = new Xls_Reader(System.getProperty("user.dir")+"\\src\\test\\java\\resources\\TestData.xlsx");
-				
+		  
+		    
+		   
+		    
+		    
 			String username = reader.getCellData("LoginCredentials","Username", 2);
             String password = reader.getCellData("LoginCredentials","Password", 2);
     	
