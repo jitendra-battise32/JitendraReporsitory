@@ -14,11 +14,6 @@ public class LoginPage {
 	    PageFactory.initElements(driver, this);
 	}
 	
-	
-	
-	
-	
-	
 	@FindBy (xpath="//input[@id='user_name']")
 	WebElement userName;
 	
@@ -30,19 +25,12 @@ public class LoginPage {
 	
 	@FindBy (xpath ="//*[@class='title-admin']")
 	WebElement title;
-	
-	
-	
-	
 
 	@FindBy (xpath ="//*[@class='box-body']")
 	WebElement dashBoardReports;
-	
-
 
 	public WebElement usernameMethod() {
-		return userName;
-		
+		return userName;	
 	}
 		
 	public WebElement passwordMethod() {
@@ -60,8 +48,5 @@ public class LoginPage {
 	public WebElement dashBoardReportsMethod() {
 		return dashBoardReports;
 	}
-	
-		
-	
 
 }

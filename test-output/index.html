@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -48,13 +48,8 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-<<<<<<< HEAD
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1073446030\testng-customsuite.xml</span>
-=======
                   <a href="#" class="navigator-link " panel-name="test-xml-HMS_Rajbahadur">
-                    <span>C:\Users\jitendra.battise\Jitu\E2EProject\testng.xml</span>
->>>>>>> 65065918ea04ec9a5fe578abc3e69c03b5429a90
+                    <span>C:\Users\User\JITU\JitendraReporsitory\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -96,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -113,6 +108,11 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-HMS_Rajbahadur" title="Academy.E2EProject.OPDRegistrationMain" hash-for-method="OPDRegMethod">OPDRegMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMS_Rajbahadur" title="Academy.E2EProject.AddEnquiryMain" hash-for-method="enquiryAdd">enquiryAdd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-HMS_Rajbahadur -->
@@ -142,11 +142,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-HMS_Rajbahadur" title="Academy.E2EProject.ipdAddUpdateMain" hash-for-method="IPDUpdate">IPDUpdate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-HMS_Rajbahadur" title="Academy.E2EProject.AddEnquiryMain" hash-for-method="enquiryAdd">enquiryAdd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,6 +183,25 @@
           <div class="suite-HMS_Rajbahadur-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">Academy.E2EProject.AddEnquiryMain</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enquiryAdd">
+                  </a> <!-- enquiryAdd -->
+                  <span class="method-name">enquiryAdd</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Academy.E2EProject.AddEnquiryMain.enquiryAdd(AddEnquiryMain.java:88)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HMS_Rajbahadur-class-failed -->
+          <div class="suite-HMS_Rajbahadur-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">Academy.E2EProject.OPDRegistrationMain</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -197,7 +211,7 @@
                   </a> <!-- OPDRegMethod -->
                   <span class="method-name">OPDRegMethod</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at Academy.E2EProject.OPDRegistrationMain.OPDRegMethod(OPDRegistrationMain.java:111)
+	at Academy.E2EProject.OPDRegistrationMain.OPDRegMethod(OPDRegistrationMain.java:113)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -207,29 +221,14 @@
           <div class="suite-HMS_Rajbahadur-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.E2EProject.addPrescription</span>
+              <span class="class-name">Academy.E2EProject.ipdAddUpdateMain</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="DoctorAddPrescription">
-                  </a> <!-- DoctorAddPrescription -->
-                  <span class="method-name">DoctorAddPrescription</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-HMS_Rajbahadur-class-passed -->
-          <div class="suite-HMS_Rajbahadur-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Academy.E2EProject.AddEnquiryMain</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="enquiryAdd">
-                  </a> <!-- enquiryAdd -->
-                  <span class="method-name">enquiryAdd</span>
+                  <a name="IPDUpdate">
+                  </a> <!-- IPDUpdate -->
+                  <span class="method-name">IPDUpdate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,6 +266,21 @@
           <div class="suite-HMS_Rajbahadur-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">Academy.E2EProject.addPrescription</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DoctorAddPrescription">
+                  </a> <!-- DoctorAddPrescription -->
+                  <span class="method-name">DoctorAddPrescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HMS_Rajbahadur-class-passed -->
+          <div class="suite-HMS_Rajbahadur-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">Academy.E2EProject.attendPatient</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -279,29 +293,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-HMS_Rajbahadur-class-passed -->
-          <div class="suite-HMS_Rajbahadur-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Academy.E2EProject.ipdAddUpdateMain</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="IPDUpdate">
-                  </a> <!-- IPDUpdate -->
-                  <span class="method-name">IPDUpdate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-HMS_Rajbahadur-class-passed -->
         </div> <!-- panel HMS_Rajbahadur -->
         <div panel-name="test-xml-HMS_Rajbahadur" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1073446030\testng-customsuite.xml</span>
-=======
-            <span class="header-content">C:\Users\jitendra.battise\Jitu\E2EProject\testng.xml</span>
->>>>>>> 65065918ea04ec9a5fe578abc3e69c03b5429a90
+            <span class="header-content">C:\Users\User\JITU\JitendraReporsitory\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -375,61 +370,37 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'loginAsDoctorAttend')
-data.setCell(0, 2, 'Academy.E2EProject.LoginPageMain')
-data.setCell(0, 3, 12875);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginAsDoctorAddPrescription')
-data.setCell(1, 2, 'Academy.E2EProject.LoginPageMain')
-data.setCell(1, 3, 7866);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginAsDoctorAddRoundNotes')
-data.setCell(2, 2, 'Academy.E2EProject.LoginPageMain')
-data.setCell(2, 3, 6797);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginMethod')
-data.setCell(3, 2, 'Academy.E2EProject.LoginPageMain')
-data.setCell(3, 3, 4573);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
-return data;
-}
-              </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
-=======
 data.setCell(0, 1, 'IPDRegistration')
 data.setCell(0, 2, 'Academy.E2EProject.ipdAddUpdateMain')
-data.setCell(0, 3, 28844);
+data.setCell(0, 3, 31832);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'enquiryAdd')
-data.setCell(1, 2, 'Academy.E2EProject.AddEnquiryMain')
-data.setCell(1, 3, 12955);
+data.setCell(1, 1, 'OPDRegMethod')
+data.setCell(1, 2, 'Academy.E2EProject.OPDRegistrationMain')
+data.setCell(1, 3, 21071);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'OPDRegMethod')
-data.setCell(2, 2, 'Academy.E2EProject.OPDRegistrationMain')
-data.setCell(2, 3, 12711);
+data.setCell(2, 1, 'enquiryAdd')
+data.setCell(2, 2, 'Academy.E2EProject.AddEnquiryMain')
+data.setCell(2, 3, 16489);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'DoctorAttendPatient')
 data.setCell(3, 2, 'Academy.E2EProject.attendPatient')
-data.setCell(3, 3, 8621);
+data.setCell(3, 3, 12193);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'IPDUpdate')
 data.setCell(4, 2, 'Academy.E2EProject.ipdAddUpdateMain')
-data.setCell(4, 3, 7208);
+data.setCell(4, 3, 9814);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'DoctorAddPrescription')
 data.setCell(5, 2, 'Academy.E2EProject.addPrescription')
-data.setCell(5, 3, 6583);
+data.setCell(5, 3, 7362);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'DoctorAddRoundNotes')
 data.setCell(6, 2, 'Academy.E2EProject.addRoundNotes')
-data.setCell(6, 3, 5672);
+data.setCell(6, 3, 6443);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'login')
 data.setCell(7, 2, 'Academy.E2EProject.LoginPageMain')
-data.setCell(7, 3, 3188);
+data.setCell(7, 3, 4870);
 window.suiteTableData['HMS_Rajbahadur']= { tableData: data, tableDiv: 'times-div-HMS_Rajbahadur'}
 return data;
 }
@@ -437,7 +408,6 @@ return data;
               <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-HMS_Rajbahadur">
               </div> <!-- times-div-HMS_Rajbahadur -->
->>>>>>> 65065918ea04ec9a5fe578abc3e69c03b5429a90
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -467,104 +437,83 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-<<<<<<< HEAD
-                <span class="method-name">loginMethod</span>
-                <span class="method-start">13267 ms</span>
-=======
                 <span class="method-name">login</span>
-                <span class="method-start">12664 ms</span>
->>>>>>> 65065918ea04ec9a5fe578abc3e69c03b5429a90
+                <span class="method-start">17151 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.ipdAddUpdateMain</div> <!-- chronological-class-name -->
               <div class="test-method">
-<<<<<<< HEAD
-                <span class="method-name">loginAsDoctorAttend</span>
-                <span class="method-start">17845 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginAsDoctorAddRoundNotes</span>
-                <span class="method-start">30723 ms</span>
-=======
                 <img src="failed.png">
                 </img>
                 <span class="method-name">IPDRegistration</span>
-                <span class="method-start">15860 ms</span>
+                <span class="method-start">22035 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">IPDUpdate</span>
-                <span class="method-start">45664 ms</span>
->>>>>>> 65065918ea04ec9a5fe578abc3e69c03b5429a90
+                <span class="method-start">54668 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.attendPatient</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DoctorAttendPatient</span>
-                <span class="method-start">52873 ms</span>
+                <span class="method-start">64484 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.addRoundNotes</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DoctorAddRoundNotes</span>
-                <span class="method-start">61497 ms</span>
+                <span class="method-start">76679 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.addPrescription</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DoctorAddPrescription</span>
-                <span class="method-start">67171 ms</span>
+                <span class="method-start">83124 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.LoginPageMain</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">after</span>
-                <span class="method-start">73756 ms</span>
+                <span class="method-start">90487 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.AddEnquiryMain</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">before</span>
-                <span class="method-start">76614 ms</span>
+                <span class="method-start">92332 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">enquiryAdd</span>
-                <span class="method-start">89159 ms</span>
+                <span class="method-start">99098 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">after</span>
-                <span class="method-start">102116 ms</span>
+                <span class="method-start">116591 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.E2EProject.OPDRegistrationMain</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">before</span>
-                <span class="method-start">102233 ms</span>
+                <span class="method-start">117071 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-<<<<<<< HEAD
-                <span class="method-name">loginAsDoctorAddPrescription</span>
-                <span class="method-start">37523 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">after</span>
-                <span class="method-start">45391 ms</span>
-=======
                 <img src="failed.png">
                 </img>
                 <span class="method-name">OPDRegMethod</span>
-                <span class="method-start">124640 ms</span>
+                <span class="method-start">138532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">after</span>
-                <span class="method-start">137756 ms</span>
->>>>>>> 65065918ea04ec9a5fe578abc3e69c03b5429a90
+                <span class="method-start">160180 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Academy.E2EProject.NewTest">
+      <class name="Academy.E2EProject.OPDRegistrationMain">
         <methods>
-          <include name="test"/>
+          <include name="after"/>
+          <include name="OPDRegMethod"/>
           <include name="before"/>
         </methods>
-      </class> <!-- Academy.E2EProject.NewTest -->
+      </class> <!-- Academy.E2EProject.OPDRegistrationMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

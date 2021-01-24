@@ -2,6 +2,7 @@ package Academy.E2EProject;
 
 import java.io.IOException;
 
+import org.apache.commons.lang.exception.ExceptionUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -12,6 +13,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.beust.jcommander.JCommander.Builder;
 
 
@@ -109,8 +111,11 @@ public class OPDRegistrationMain extends base{
 		//	 System.out.println(e.getStackTrace());
 			
 			 test.fail(e);
+			 test.log(Status.INFO, ExceptionUtils.getStackTrace(e));
 	         Assert.fail();
 	         extent.flush();
+	         
+	        
 	        
 
 			}

@@ -2,6 +2,7 @@ package Academy.E2EProject;
 
 import java.io.IOException;
 
+import org.apache.commons.lang.exception.ExceptionUtils;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -57,7 +58,7 @@ public class Listeners extends base implements ITestListener{
 	      } 
       catch (Exception e) 
       {
-		
+    	  test.log(Status.INFO, ExceptionUtils.getStackTrace(e));
 	   }
        //Now we need to call the getScreenshot method from our base class
    try {
